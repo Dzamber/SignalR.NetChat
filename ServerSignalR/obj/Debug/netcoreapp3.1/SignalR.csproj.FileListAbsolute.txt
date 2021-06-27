@@ -1,0 +1,13 @@
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\netcoreapp3.1\SignalR.csprojAssemblyReference.cache
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\netcoreapp3.1\SignalR.AssemblyInfoInputs.cache
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\netcoreapp3.1\SignalR.AssemblyInfo.cs
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\netcoreapp3.1\SignalR.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\netcoreapp3.1\SignalR.exe
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\netcoreapp3.1\SignalR.deps.json
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\netcoreapp3.1\SignalR.runtimeconfig.json
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\netcoreapp3.1\SignalR.runtimeconfig.dev.json
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\netcoreapp3.1\SignalR.dll
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\netcoreapp3.1\SignalR.pdb
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\netcoreapp3.1\SignalR.dll
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\netcoreapp3.1\SignalR.pdb
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\netcoreapp3.1\SignalR.genruntimeconfig.cache

@@ -1,0 +1,16 @@
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\net5.0\SignalR.exe
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\net5.0\SignalR.deps.json
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\net5.0\SignalR.runtimeconfig.json
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\net5.0\SignalR.runtimeconfig.dev.json
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\net5.0\SignalR.dll
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\net5.0\ref\SignalR.dll
+C:\Users\Sebastian\Source\Repos\SignalR\bin\Debug\net5.0\SignalR.pdb
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.csprojAssemblyReference.cache
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.AssemblyInfoInputs.cache
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.AssemblyInfo.cs
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.dll
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\ref\SignalR.dll
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.pdb
+C:\Users\Sebastian\Source\Repos\SignalR\obj\Debug\net5.0\SignalR.genruntimeconfig.cache
