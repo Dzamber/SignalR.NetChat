@@ -27,6 +27,7 @@ namespace ClientSygnalR.Net
         HubConnection connection;
         string roomName = "";
         int roomID = -1;
+        bool userChosen = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -104,7 +105,11 @@ namespace ClientSygnalR.Net
                     }
                     
                 });
+            });
 
+            connection.On<string>("SetUserName", (username) =>
+            {
+                nickname.Text = username;
             });
 
         }
@@ -130,10 +135,10 @@ namespace ClientSygnalR.Net
         {
             try
             {
-                if(checkBox.IsChecked == true)
+                if(checkBox.IsChecked == true && userChosen)
                 {
                     await connection.InvokeAsync("SendPrivateMessage",
-                           nickname.Text, messagebox.Text, usersList.SelectedItem);
+                           nickname.Text, messagebox.Text, (string)target.Content);
                     
                 }
                 else
@@ -179,15 +184,20 @@ namespace ClientSygnalR.Net
                 await connection.InvokeAsync("LogOutOfChannel", roomID, nickname.Text);
             }
             roomName = (string) channelRoomList.SelectedItem;
-
-
+            messagesList.Items.Add("Zmieniono kanal na " + roomName);
             await connection.InvokeAsync("LogInToChannel", nickname.Text, roomName);
         }
 
         private void usersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            target.Content = (string)usersList.SelectedItem;
-            //channelRoomList.SelectedItem = null;
+            string item = (string)usersList.SelectedItem;
+            
+            if (item != null)
+            {
+                target.Content = item;
+                userChosen = true;
+            }
+
         }
 
         private async void DataWindow_Closing(object sender, CancelEventArgs e)

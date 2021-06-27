@@ -28,6 +28,7 @@ namespace SignalR
     public class ChatHub : Hub
     {
         static ArrayList chatRoomList = new ArrayList();
+        static int NumberOfClients = 0;
         private Chat FindChatRoomByChannelName(string channelName)
         {
             foreach(Chat chat in chatRoomList)
@@ -67,14 +68,22 @@ namespace SignalR
 
             ClientChat clientSendingMessage = null;
             Chat chatroom = FindChatRoomByUserName(userName, ref clientSendingMessage);
-            foreach(ClientChat client  in chatroom.clientList)
+            if (chatroom != null)
             {
-                await client.clientProxy.SendAsync("ReceiveMessage", userName, message);
+                foreach (ClientChat client in chatroom.clientList)
+                {
+                    await client.clientProxy.SendAsync("ReceiveMessage", userName, message);
+                }
+            }
+            else
+            {
+                await Clients.Caller.SendAsync("ReceiveMessage", "DEBUG", "Nalezy najpierw polaczyc sie z kanalem");
             }
         }
 
         public async Task SendPrivateMessage(string sender, string message, string target)
         {
+            
             await FindClientChatByUsername(target).clientProxy.SendAsync("ReceiveMessage", "Priv od " + sender + " do " + target, message);
             await Clients.Caller.SendAsync("ReceiveMessage", "Priv od " + sender + " do " + target, message);
         }
@@ -85,7 +94,8 @@ namespace SignalR
             {
                 await Clients.Caller.SendAsync("AddToChannelListbox", chat.name);
             }
-        }
+            await Clients.Caller.SendAsync("SetUserName", "guest"+NumberOfClients++);
+        }//da
         public async Task LogInToChannel(string userName, string channelName)
         {
             await Clients.Caller.SendAsync("ClearUserListBox");
@@ -134,8 +144,13 @@ namespace SignalR
 
         public async Task CreateNewChannel(string name)
         {
-            chatRoomList.Add(new Chat(name));
-            await Clients.All.SendAsync("AddToChannelListbox", name);
+            if(FindChatRoomByChannelName(name) == null)
+            {
+                chatRoomList.Add(new Chat(name));
+                await Clients.Caller.SendAsync("ReceiveMessage", "Server", "Utworzono kanal");
+                await Clients.All.SendAsync("AddToChannelListbox", name);
+            }
+            
         }
 
     }

@@ -26,7 +26,7 @@
         </ListBox>
         <Button x:Name="connectButton" Content="Polacz" HorizontalAlignment="Left" Margin="10,384,0,0" VerticalAlignment="Top" Click="connectButton_Click" RenderTransformOrigin="19.308,0.202"/>
         <Button x:Name="sendButton" Content="Wyslij Wiadomosc" HorizontalAlignment="Left" Margin="14,364,0,0" VerticalAlignment="Top" Click="sendButton_Click" Grid.Column="3" RenderTransformOrigin="-0.791,1.154"/>
-        <TextBox x:Name="nickname" HorizontalAlignment="Left" Margin="10,354,0,0" Text="guest" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="25"/>
+        <TextBox x:Name="nickname" HorizontalAlignment="Left" Margin="10,354,0,0" Text="-----------" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="25" IsEnabled="False"/>
         <TextBox x:Name="messagebox" HorizontalAlignment="Left" Margin="145,329,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" Height="25" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="4">
 
         </TextBox>

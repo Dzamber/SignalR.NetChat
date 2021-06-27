@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sebastian\\Source\\Repos\\SignalRProject\\ServerSignalR\\SignalR.csproj": {}
+    "C:\\Users\\Sebastian\\Source\\Repos\\SignalR.NetChat\\ServerSignalR\\SignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sebastian\\Source\\Repos\\SignalRProject\\ServerSignalR\\SignalR.csproj": {
+    "C:\\Users\\Sebastian\\Source\\Repos\\SignalR.NetChat\\ServerSignalR\\SignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sebastian\\Source\\Repos\\SignalRProject\\ServerSignalR\\SignalR.csproj",
+        "projectUniqueName": "C:\\Users\\Sebastian\\Source\\Repos\\SignalR.NetChat\\ServerSignalR\\SignalR.csproj",
         "projectName": "SignalR",
-        "projectPath": "C:\\Users\\Sebastian\\Source\\Repos\\SignalRProject\\ServerSignalR\\SignalR.csproj",
+        "projectPath": "C:\\Users\\Sebastian\\Source\\Repos\\SignalR.NetChat\\ServerSignalR\\SignalR.csproj",
         "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sebastian\\Source\\Repos\\SignalRProject\\ServerSignalR\\obj\\",
+        "outputPath": "C:\\Users\\Sebastian\\Source\\Repos\\SignalR.NetChat\\ServerSignalR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
