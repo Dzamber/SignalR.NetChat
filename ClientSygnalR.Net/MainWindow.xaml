@@ -1,0 +1,42 @@
+﻿<Window x:Class="ClientSygnalR.Net.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientSygnalR.Net"
+        mc:Ignorable="d"
+        Closing="DataWindow_Closing"
+        Title="MainWindow" Height="470" Width="920">
+    <Grid Margin="0,0,-70,0" Height="440" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="196*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="108*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="messagesList" Margin="145,38,0,0" Height="271" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="635" Grid.ColumnSpan="4">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Button x:Name="connectButton" Content="Polacz" HorizontalAlignment="Left" Margin="10,384,0,0" VerticalAlignment="Top" Click="connectButton_Click" RenderTransformOrigin="19.308,0.202"/>
+        <Button x:Name="sendButton" Content="Wyslij Wiadomosc" HorizontalAlignment="Left" Margin="14,364,0,0" VerticalAlignment="Top" Click="sendButton_Click" Grid.Column="3" RenderTransformOrigin="-0.791,1.154"/>
+        <TextBox x:Name="nickname" HorizontalAlignment="Left" Margin="10,354,0,0" Text="guest" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="25"/>
+        <TextBox x:Name="messagebox" HorizontalAlignment="Left" Margin="145,329,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" Height="25" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="4">
+
+        </TextBox>
+        <ListBox x:Name="usersList" Margin="10,38,0,111" HorizontalAlignment="Left" Width="115" SelectionChanged="usersList_SelectionChanged"/>
+        <Button x:Name="createNewRoom" Content="Stworz nowy pokoj" HorizontalAlignment="Left" Margin="134,339,0,0" VerticalAlignment="Top" Click="createNewRoom_Click" Grid.Column="3"/>
+        <ListBox x:Name="channelRoomList" Margin="134,38,0,111" HorizontalAlignment="Left" Width="115" Grid.Column="3" SelectionChanged="channelRoomList_SelectionChanged" SelectionMode="Single"/>
+        <TextBox x:Name="chatroomName" HorizontalAlignment="Left" Margin="134,366,0,0" Text="roomName" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="25" Grid.Column="3"/>
+        <CheckBox x:Name="checkBox" Content="Wyslij Prywatna Wiadomosc" Margin="20,384,196,0" VerticalAlignment="Top" Height="18" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Label x:Name="label" Content="Wyslij do:" Grid.Column="1" Margin="35,393,300,0" VerticalAlignment="Top" RenderTransformOrigin="-1.474,-0.114" Grid.ColumnSpan="3" Height="36"/>
+        <Label x:Name="target" Content="----" Grid.Column="3" HorizontalAlignment="Left" Margin="12,393,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
